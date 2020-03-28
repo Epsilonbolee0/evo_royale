@@ -1,2 +1,2 @@
-# pavlov.nick.2000-gmail.com
+# EvoRoyale
 B_RATS
