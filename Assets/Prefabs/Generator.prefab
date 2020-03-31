@@ -47,6 +47,8 @@ MonoBehaviour:
   TerrainFrequency: 1.25
   MoistureOctaves: 5
   MoistureFrequency: 1.25
+  HeatOctaves: 4
+  HeatFrequency: 3
   BiomeTiles:
   - {fileID: 1032484611425838131, guid: 1b1c3f1f3ba6d8f43a4e47e6ed169431, type: 3}
   - {fileID: 3243952909544064302, guid: 9147443b6270a054b9e6cf5158a99118, type: 3}
@@ -59,5 +61,13 @@ MonoBehaviour:
   - {fileID: 5551317207247777286, guid: 927d1dfaf96f70440a05320b20ed5892, type: 3}
   - {fileID: 4568044478254477368, guid: 5d475ff30321ab643893217606bef9fe, type: 3}
   - {fileID: 5076262521838460121, guid: 0c65c6202715f594ea9fa6ccc5e371b7, type: 3}
+  - {fileID: 95803234578564218, guid: 6931da2cac8c1fd448542949b63f459f, type: 3}
+  - {fileID: 3253534656671667901, guid: bd75fc35964355e4d83a08d845dc8a6c, type: 3}
+  HeatTiles:
+  - {fileID: 8425616499323151570, guid: 14382595825cecc439909b8a2f397ef6, type: 3}
+  - {fileID: 5436434424878172143, guid: 935b7d9a0b9cdcf4ea834da71604b9d9, type: 3}
+  - {fileID: 5726436537330786358, guid: 31f3450f87d55bf42891c784e777a6c3, type: 3}
+  - {fileID: 5093831081542176797, guid: fe3f513c91c5b7c498f0deaccad86802, type: 3}
+  - {fileID: 1832568089126947719, guid: a6e5d6c59b1459944a73027daf111dbd, type: 3}
   RiverTile: {fileID: 1998153346271050539, guid: b71f0e4091449a04d8b07f153f5e4356,
     type: 3}

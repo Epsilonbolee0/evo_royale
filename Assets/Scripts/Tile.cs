@@ -2,6 +2,15 @@
 using System;
 using System.Collections.Generic;
 
+public enum HeatType
+{
+    Colder,
+    Cold,
+    Average,
+    Warm,
+    Warmer
+}
+
 public enum HeightType
 {
 	Water,
@@ -34,16 +43,22 @@ public enum BiomeType
 	Desert,
     Savannah,
     Alpine,
-    Beach
+    Beach,
+    Steppe,
+    Hills
 }
 
 public class Tile
 {
 	public BiomeType BiomeType;
-	public float HeightValue { get; set; }
+    public HeatType HeatType;
+
+    public float Heat;
+    public float HeightValue { get; set; }
+
 	public int X, Y;
 
-	public Tile()
+    public Tile()
 	{
 	}
 
@@ -84,14 +99,10 @@ public class Tile
 			case (HeightType.Hill):
 				if (moisture == MoistureType.Wettest || moisture == MoistureType.Wetter)
 					this.BiomeType = BiomeType.Taiga;
-				else if (moisture == MoistureType.Wet)
-					this.BiomeType = BiomeType.Forest;
-                else if (moisture == MoistureType.Dry)
-                    this.BiomeType = BiomeType.Plains;
-                else if (moisture == MoistureType.Dryer)
-                    this.BiomeType = BiomeType.Savannah;
+				else if (moisture == MoistureType.Wet || moisture == MoistureType.Dry)
+					this.BiomeType = BiomeType.Hills;
                 else
-                    this.BiomeType = BiomeType.Desert;
+                    this.BiomeType = BiomeType.Steppe;
                 break;
 			case (HeightType.Mountain):
 				if (moisture == MoistureType.Wettest || moisture == MoistureType.Wetter || moisture == MoistureType.Wet)
@@ -101,5 +112,21 @@ public class Tile
 				break;
 		}
 
+    }
+
+    public void SetHeat(float heat, HeatConst heatConst)
+    {
+        if (heat < 0.2f)
+            this.HeatType = HeatType.Colder;
+        else if (heat < 0.4f)
+            this.HeatType = HeatType.Cold;
+        else if (heat < 0.6f)
+            this.HeatType = HeatType.Average;
+        else if (heat < 0.8f)
+            this.HeatType = HeatType.Warm;
+        else
+            this.HeatType = HeatType.Warmer;
+
+        this.Heat = heat * heatConst.Range + heatConst.Offset;
     }
 }
