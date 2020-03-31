@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1530446470855100551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1530446470855100553}
+  - component: {fileID: 1530446470855100552}
+  m_Layer: 0
+  m_Name: Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1530446470855100553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530446470855100551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 93.974655, y: -2.2428167, z: -12.087169}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1530446470855100552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530446470855100551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec34ea59156371c4a80171d2fd456547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TerrainOctaves: 5
+  TerrainFrequency: 1.25
+  MoistureOctaves: 5
+  MoistureFrequency: 1.25
+  BiomeTiles:
+  - {fileID: 1032484611425838131, guid: 1b1c3f1f3ba6d8f43a4e47e6ed169431, type: 3}
+  - {fileID: 3243952909544064302, guid: 9147443b6270a054b9e6cf5158a99118, type: 3}
+  - {fileID: 7076658028202141235, guid: c03a92ef15e5fb743997ea4194d97687, type: 3}
+  - {fileID: 7722361994727025043, guid: 5ce05fddbb9ec3c4d8e497d6401cd532, type: 3}
+  - {fileID: 2405973385816786903, guid: 6e8a817c80edc4f42b19f1b9352f86e0, type: 3}
+  - {fileID: 1660027133385269858, guid: 6c5ca7bb16089d64e9ad52434e8aae3f, type: 3}
+  - {fileID: 1131348581490602428, guid: f3664e0a11bbcfe42ace0a3180eb559b, type: 3}
+  - {fileID: 6571824314792983901, guid: a27d25d05b7a03d41a721bdc50f45685, type: 3}
+  - {fileID: 5551317207247777286, guid: 927d1dfaf96f70440a05320b20ed5892, type: 3}
+  - {fileID: 4568044478254477368, guid: 5d475ff30321ab643893217606bef9fe, type: 3}
+  - {fileID: 5076262521838460121, guid: 0c65c6202715f594ea9fa6ccc5e371b7, type: 3}
+  RiverTile: {fileID: 1998153346271050539, guid: b71f0e4091449a04d8b07f153f5e4356,
+    type: 3}
