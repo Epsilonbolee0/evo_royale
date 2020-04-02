@@ -41,6 +41,5 @@ public static class MathHelper
     {
         int r = x % m;
         return r < 0 ? r + m : r;
-    }    
-
+    }
 }
